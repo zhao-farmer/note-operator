@@ -3,7 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 
 // import { Fancybox } from '@fancyapps/ui';
-import pkg from '@fancyapps/ui';
+import * as pkg from '@fancyapps/ui';
 const { Fancybox } = pkg;
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
 
