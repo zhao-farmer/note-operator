@@ -9,7 +9,6 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@fancyapps/ui": "^5.0.36",
-    "markdown-it-custom-attrs": "^1.0.2"
+    "@fancyapps/ui": "^5.0.36"
   }
 }
