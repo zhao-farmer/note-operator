@@ -27,7 +27,7 @@ export default defineConfig({
 
   // markdown所在目录
   // srcDir: './src',
-  base:'/node-operator',
+  base:'/note-operator',
 
   // 主题配置
   themeConfig: {
