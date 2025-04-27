@@ -25,9 +25,12 @@ jobs:
           node-version: 22
           # 缓存 npm 依赖
           cache: npm
-          
+      
+      - name: 设置页面
+        uses: actions/configure-pages@v4
+        
       - name: 安装依赖
-        run: npm install --frozen-lockfile
+        run: npm ci
 
       # 运行构建脚本
       - name: 构建 VitePress 站点
@@ -39,7 +42,7 @@ jobs:
         with:
           # 部署到 gh-pages 分支
           target_branch: gh-pages
-          # 部署目录为 VuePress 的默认输出目录
+          # 部署目录为 vitepress 的默认输出目录
           build_dir: docs/.vitepress/dist
         env:
           # 使用 actions 中设定的token
