@@ -25,10 +25,7 @@ jobs:
           node-version: 22
           # 缓存 npm 依赖
           cache: npm
-      
-      - name: 设置页面
-        uses: actions/configure-pages@v4
-        
+    
       - name: 安装依赖
         run: npm ci
 
