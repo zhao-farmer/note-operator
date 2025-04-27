@@ -17,7 +17,7 @@
 
 ## 构筑静态网站
 
-1. vuePress静态站点  [点击跳转](markdown/other/document/vuePress/01.html)
+1. vuePress静态站点  [点击跳转](markdown/other/document/vuepress/01.html)
 
 2. vitePress静态站点  [点击跳转](markdown/other/document/vitepress/01.html)
 
