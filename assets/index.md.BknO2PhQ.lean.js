@@ -1,0 +1,1 @@
+import{_ as e,c as r,o,a0 as t}from"./chunks/framework.zS86-xgI.js";const u=JSON.parse('{"title":"站点介绍","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),l={name:"index.md"};function i(h,a,n,d,s,m){return o(),r("div",null,a[0]||(a[0]=[t("",18)]))}const c=e(l,[["render",i]]);export{u as __pageData,c as default};
