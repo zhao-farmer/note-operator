@@ -1,12 +1,10 @@
 import { defineConfig } from 'vitepress'
 
-// import mdItCustomAttrs  from 'markdown-it-custom-attrs'
-
 import fancyboxSet from './theme/fancybox-set.mjs'
 
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-
-export default defineConfig({
+export default withMermaid({
 
   // markdown 设置
   markdown: {
@@ -125,6 +123,10 @@ export default defineConfig({
                 link: "/markdown/simulate/docker/",
             },
             {
+              text: "cygwin",
+              link: "/markdown/simulate/cygwin/",
+            },
+            {
               text: "conda",
               link: "/markdown/simulate/docker/",
             },
@@ -209,10 +211,158 @@ export default defineConfig({
     // 侧边栏
     sidebar: {
         //============================ 数据库 ==============================
-       
+        '/markdown/data/mysql/':[
+            {
+                text: '安装软件',
+                items: [
+                  {text:'windows安装',link:'/markdown/data/mysql/install/01'},
+                  {text:'linux安装',link:'/markdown/data/mysql/install/02'},
+                ],
+            }, 
+            {
+              text: '教程',
+              items: [
+                {text:'windows安装',link:'/markdown/data/mysql/install/01'},
+                {text:'linux安装',link:'/markdown/data/mysql/install/02'},
+              ],
+          },  
+        ],
+        '/markdown/data/oracle/':[
+            {
+                text: '安装软件',
+                items: [
+                  {text:'windows安装',link:'/markdown/data/oracle/install/01'},
+                  {text:'linux安装',link:'/markdown/data/oracle/install/02'},
+                ],
+            }, 
+            {
+              text: '教程',
+              items: [
+                {text:'windows安装',link:'/markdown/data/oracle/install/01'},
+                {text:'linux安装',link:'/markdown/data/oracle/install/02'},
+              ],
+          },  
+        ],
+        '/markdown/data/sqlserver/':[
+            {
+                text: '安装软件',
+                items: [
+                  {text:'windows安装',link:'/markdown/data/sqlserver/install/01'},
+                ],
+            }, 
+            {
+              text: '教程',
+              items: [
+                {text:'windows安装',link:'/markdown/data/oracle/install/01'},
+                {text:'linux安装',link:'/markdown/data/oracle/install/02'},
+              ],
+          },  
+        ],
+        '/markdown/data/pgsql/':[
+            {
+                text: '安装软件',
+                items: [
+                  {text:'windows安装',link:'/markdown/data/pgsql/install/01'},
+                  {text:'linux安装',link:'/markdown/data/pgsql/install/02'},
+                ],
+            }, 
+            {
+              text: '教程',
+              items: [
+                {text:'windows安装',link:'/markdown/data/oracle/install/01'},
+                {text:'linux安装',link:'/markdown/data/oracle/install/02'},
+              ],
+          },  
+        ],
+        '/markdown/data/redis/':[
+            {
+                text: '安装软件',
+                items: [
+                  {text:'windows安装',link:'/markdown/data/redis/install/01'},
+                  {text:'linux安装',link:'/markdown/data/redis/install/02'},
+                ],
+            }, 
+            {
+              text: '教程',
+              items: [
+                {text:'windows安装',link:'/markdown/data/redis/install/01'},
+                {text:'linux安装',link:'/markdown/data/redis/install/02'},
+              ],
+          },  
+        ],
+        '/markdown/data/mongodb/':[
+            {
+                text: '安装软件',
+                items: [
+                  {text:'windows安装',link:'/markdown/data/mongodb/install/01'},
+                  {text:'linux安装',link:'/markdown/data/mongodb/install/02'},
+                ],
+            }, 
+            {
+              text: '教程',
+              items: [
+                {text:'windows安装',link:'/markdown/data/mongodb/install/01'},
+                {text:'linux安装',link:'/markdown/data/mongodb/install/02'},
+              ],
+          },  
+        ],
+        '/markdown/data/elasticsearch/':[
+            {
+                text: '安装软件',
+                items: [
+                  {text:'windows安装',link:'/markdown/data/elasticsearch/install/01'},
+                  {text:'linux安装',link:'/markdown/data/elasticsearch/install/02'},
+                ],
+            }, 
+            {
+              text: '教程',
+              items: [
+                {text:'windows安装',link:'/markdown/data/elasticsearch/install/01'},
+                {text:'linux安装',link:'/markdown/data/elasticsearch/install/02'},
+              ],
+          },  
+        ],
+        '/markdown/data/inflexDB/':[
+            {
+                text: '安装软件',
+                items: [
+                  {text:'windows安装',link:'/markdown/data/inflexDB/install/01'},
+                  {text:'linux安装',link:'/markdown/data/inflexDB/install/02'},
+                ],
+            }, 
+            {
+              text: '教程',
+              items: [
+                {text:'windows安装',link:'/markdown/data/inflexDB/install/01'},
+                {text:'linux安装',link:'/markdown/data/inflexDB/install/02'},
+              ],
+          },  
+        ],
+        '/markdown/data/sqllite/':[
+            {
+                text: '安装软件',
+                items: [
+                  {text:'windows安装',link:'/markdown/data/sqllite/install/01'},
+                  {text:'linux安装',link:'/markdown/data/sqllite/install/02'},
+                ],
+            }, 
+            {
+              text: '教程',
+              items: [
+                {text:'windows安装',link:'/markdown/data/sqllite/install/01'},
+                {text:'linux安装',link:'/markdown/data/sqllite/install/02'},
+              ],
+          },  
+        ],
+
+
+
 
         //============================ 操作系统 ==============================
 
+        //============================  中间件  ==============================
+
+        //============================ 模拟环境 ==============================
         '/markdown/simulate/vmware/':[
             {
                 text: '安装操作系统',
@@ -225,6 +375,8 @@ export default defineConfig({
                   {text:'五、安装Linux ubuntu',link:'/markdown/simulate/vmware/system/05'},
                   {text:'六、安装Mac',link:'/markdown/simulate/vmware/system/06'},
                   {text:'七、安装andriod',link:'/markdown/simulate/vmware/system/07'},
+                  {text:'八、安装Rocky Linux',link:'/markdown/simulate/vmware/system/08'},
+                  {text:'九、安装CentOS-Stream',link:'/markdown/simulate/vmware/system/09'},
                 ],
             },
             {
@@ -236,12 +388,27 @@ export default defineConfig({
                 {text:'远程连接工具',link:'/markdown/simulate/vmware/tool/03'},
                 {text:'ubuntu的编辑器nano',link:'/markdown/simulate/vmware/tool/04'},
                 {text:'vim编辑器',link:'/markdown/simulate/vmware/tool/05'},
+                {text:'错误指南',link:'/markdown/simulate/vmware/tool/06'},
               ],
           },
         ],
-
-        //============================ 中间件 ==============================
-
+        '/markdown/simulate/cygwin/':[
+          {
+              text: 'cygwin安装与使用',
+              // 相对路径会自动追加子路径前缀
+              items: [
+                {text:'一、安装cygwin',link:'/markdown/simulate/cygwin/base/01'},
+                {text:'二、使用cygwin',link:'/markdown/simulate/cygwin/base/02'},
+              ],
+          },
+          {
+            text: '模拟其他软件',
+            // 相对路径会自动追加子路径前缀
+            items: [
+              {text:'redis',link:'/markdown/simulate/cygwin/soft/01'},
+            ],
+        },
+      ],
 
         //============================ 测试相关 ==============================
         
@@ -397,7 +564,8 @@ export default defineConfig({
                 {text:'四、makdown语法扩展',link:'/markdown/other/document/vuepress/04.md'},
                 {text:'五、静态资源',link:'/markdown/other/document/vuepress/05.md'},
                 {text:'六、github部署',link:'/markdown/other/document/vuepress/06.md'},
-                {text:'七、其他设置记录',link:'/markdown/other/document/vuepress/07.md'},
+                {text:'七、样式相关配置',link:'/markdown/other/document/vuepress/07.md'},
+                {text:'八、插件配置',link:'/markdown/other/document/vuepress/08.md'},
               ],
           },
           {
@@ -406,7 +574,7 @@ export default defineConfig({
             items: [
               {text:'一、快速上手',link:'/markdown/other/document/vitepress/01.md'},
               {text:'二、配置文件',link:'/markdown/other/document/vitepress/02.md'},
-              {text:'三、开启数学方程',link:'/markdown/other/document/vitepress/03.md'},
+              {text:'三、插件配置',link:'/markdown/other/document/vitepress/03.md'},
               {text:'四、其他配置',link:'/markdown/other/document/vitepress/04.md'},
               {text:'五、问题与解决方案',link:'/markdown/other/document/vitepress/05.md'},
             ],
@@ -439,6 +607,7 @@ export default defineConfig({
             ],
           },
         ],
+        
         '/markdown/other/network/': [
           {
               text: 'shadowsocks小飞机',
