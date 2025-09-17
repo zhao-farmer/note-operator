@@ -2,7 +2,5 @@
 
 1. shadowsocks 小飞机
 
-2. huggingface 模型下载
-
-3. CDN 插件代理
+2. CDN 插件代理
 

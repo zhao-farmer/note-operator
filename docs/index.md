@@ -28,8 +28,8 @@
 ## 网络相关
 
 1. shadowsocks vpn [点击跳转](/markdown/other/network/shadowsocks/01.html)
-2. huggingface 试用 [点击跳转](/markdown/other/network/huggingface/02.html)
-3. 替换CDN [点击跳转](/markdown/other/network/cdn/01.html)
+
+2. 替换CDN [点击跳转](/markdown/other/network/cdn/01.html)
 
 ## VMware虚拟机
 
