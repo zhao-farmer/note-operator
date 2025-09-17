@@ -20,11 +20,10 @@ export default withMermaid({
 
   // 应用配置信息
   lang:'zh-cn',
-  title: "软件操作相关",
-  description: "包含数据库、操作系统、中间件以及一些课外知识的文档",
+  title: "赵建辉的运维测试知识库",
+  description: "包含数据库、操作系统、中间件、测试、部署等的文档",
 
   // markdown所在目录
-  // srcDir: './src',
   base:'/note-operator',
 
   // 主题配置
@@ -158,34 +157,7 @@ export default withMermaid({
             },
         ],
       },
-      {
-        text: "AI技术",
-        items: [
-            {
-                text: "AI图画",
-                items:[
-                  {text:'sd-webui', link: "/markdown/AI/picture/sd-webui/"},
-                  {text:'sd-ComfyUI', link: "/markdown/AI/picture/ComfyUI/"},
-                ]
-            },
-            {
-                text: "AI声音",
-                link: "/markdown/AI/sound/",
-            },
-            {
-                text: "AI视频",
-                link: "/markdown/AI/vedio/",
-            },
-            {
-                text: "AI问答",
-                link: "/markdown/AI/chat/",
-            },
-            {
-                text: "AI学习",
-                link: "/markdown/AI/study/",
-            },
-        ],
-      },
+      
       {
         text: "其他技术",
         items: [
@@ -438,70 +410,6 @@ export default withMermaid({
         '/markdown/test/automation/': [
         ],
 
-        //============================ AI技术 ==============================
-        '/markdown/AI/picture/sd-webui/': [
-            {
-                text: 'sd-webui 课程学习',
-                items: [
-                  {text:'第一章：认识',link:'/markdown/AI/picture/sd-webui/study/01'},
-                  {text:'第二章：提示词与参数',link:'/markdown/AI/picture/sd-webui/study/02'},
-                  {text:'第三章：图生图',link:'/markdown/AI/picture/sd-webui/study/03'},
-                  {text:'第四章：绘画模型',link:'/markdown/AI/picture/sd-webui/study/04'},
-                  {text:'第五章：高清修复与放大',link:'/markdown/AI/picture/sd-webui/study/05'},
-                  {text:'第六章：Embeddings、LoRa、Hypernetwork模型原理解析',link:'/markdown/AI/picture/sd-webui/study/06'},
-                  {text:'第七章：局部重绘',link:'/markdown/AI/picture/sd-webui/study/07'},
-                  {text:'第八章：插件安装',link:'/markdown/AI/picture/sd-webui/study/08'},
-                  {text:'第九章：lora',link:'/markdown/AI/picture/sd-webui/study/09'},
-                  {text:'第十章：ControlNet',link:'/markdown/AI/picture/sd-webui/study/10'},
-                  {text:'第十一章：超高清放大',link:'/markdown/AI/picture/sd-webui/study/11'},
-                  {text:'第十二章：AI文字与二维码',link:'/markdown/AI/picture/sd-webui/study/12'},
-                ],
-            },
-            {
-              text: 'sd-webui 其他功能',
-              items: [
-                {text:'动画AnimateDiff',link:'/markdown/AI/picture/sd-webui/other/01'},
-                {text:'透明图rembg',link:'/markdown/AI/picture/sd-webui/other/02'},
-                {text:'换脸sd-webui-reactor',link:'/markdown/AI/picture/sd-webui/other/03'},
-                {text:'敏感词过滤',link:'/markdown/AI/picture/sd-webui/other/04'},
-                {text:'本地翻译部署',link:'/markdown/AI/picture/sd-webui/other/05'},
-                {text:'老照片修复',link:'/markdown/AI/picture/sd-webui/other/06'},
-              ],
-            },
-            {
-              text: 'sd-webui 接口使用',
-              items: [
-                {text:'一、查询接口的方式',link:'/markdown/AI/picture/sd-webui/api/01'},
-                {text:'二、webui接口使用',link:'/markdown/AI/picture/sd-webui/api/02'},
-                {text:'三、插件接口使用',link:'/markdown/AI/picture/sd-webui/api/03'},
-              ],
-            },
-        ],
-        '/markdown/AI/picture/ComfyUI/': [
-            {
-                text: '',
-                // 相对路径会自动追加子路径前缀
-                items: [
-               
-                ],
-            },
-        ],
-        '/markdown/AI/sound/': [
-            {
-                text: 'ChatTTS',
-                // 相对路径会自动追加子路径前缀
-                items: [
-                  {text:'一、安装（初始版本-已作废）',link:'/markdown/AI/sound/chatTTS/01'},
-                  {text:'二、安装（20240628版本）',link:'/markdown/AI/sound/chatTTS/02'},
-                  {text:'三、chatTTS学习笔记',link:'/markdown/AI/sound/chatTTS/03'},
-                  {text:'四、resemble-enhance音频降噪',link:'/markdown/AI/sound/chatTTS/04'},
-                ],
-            },
-             
-        ],
-
-
-
         //============================ 其他技术 ==============================
         '/markdown/other/install/': [
             {
@@ -616,15 +524,6 @@ export default withMermaid({
                 {text:'Shadowsocks 服务端安装',link:'/markdown/other/network/shadowsocks/01.md'},
                 {text:'Shadowsocks 客户端安装',link:'/markdown/other/network/shadowsocks/02.md'},
               ],
-          },
-          {
-            text: 'Huggingface',
-            // 相对路径会自动追加子路径前缀
-            items: [
-              {text:'一、注册用户与token',link:'/markdown/other/network/huggingface/01.md'},
-              {text:'二、huggingface网站使用',link:'/markdown/other/network/huggingface/02.md'},
-              {text:'三、镜像与下载',link:'/markdown/other/network/huggingface/03.md'},
-            ],
           },
           {
             text: '其他网络问题',

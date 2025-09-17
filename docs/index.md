@@ -42,15 +42,3 @@
 
 1. Jmeter [点击跳转](/markdown/test/stress/Jmeter/01.html)
 
-
-## AI 画图
-
-1. sd-webui 课程学习 [点击跳转](/markdown/AI/picture/sd-webui/study/01.html)
-
-2. sd-webui 其他功能 [点击跳转](/markdown/AI/picture/sd-webui/other/01.html)
-
-3. sd-webui 接口使用 [点击跳转](/markdown/AI/picture/sd-webui/api/01.html)
-
-## AI 声音
-
-1. chatTTS [点击跳转](/markdown/AI/sound/chatTTS/01.html)
