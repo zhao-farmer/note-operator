@@ -20,8 +20,8 @@ export default withMermaid({
 
   // 应用配置信息
   lang:'zh-cn',
-  title: "赵建辉的运维测试知识库",
-  description: "包含数据库、操作系统、中间件、测试、部署等的文档",
+  title: "赵建辉的知识库",
+  description: "包含DBA、运维操、测试、网络相关工作知识点的总结与积累",
 
   // markdown所在目录
   base:'/note-operator',
@@ -42,7 +42,7 @@ export default withMermaid({
                 link: "/markdown/data/oracle/",
             },
             {
-                text: "PgSQL",
+                text: "PostgreSQL",
                 link: "/markdown/data/pgsql/",
             },
             {
@@ -50,7 +50,7 @@ export default withMermaid({
                 link: "/markdown/data/sqlServer/",
             },
             {
-                text: "Redis",
+                text: "Redis(需要完成)",
                 link: "/markdown/data/redis/",
             },
             {
@@ -69,75 +69,56 @@ export default withMermaid({
         
       },
       {
-        text: "操作系统",
+        text: "运维相关",
         items: [
             {
-                text: "Linux",
-                link: "/markdown/system/linux/",
+                text: "操作系统",
+                items:[
+                  {
+                    text: "Linux",
+                    link: "/markdown/operations/system/linux/",
+                  },
+                  {
+                      text: "Windows",
+                      link: "/markdown/operations/system/windows/",
+                  },
+                ],
             },
             {
-                text: "Windows",
-                link: "/markdown/system/windows/",
+                text: "虚拟机",
+                items:[
+                    {
+                      text: "VMware虚拟机",
+                      link: "/markdown/operations/simulate/vmware/",
+                    },
+                    {
+                      text: "virtualbox虚拟机",
+                      link: "/markdown/operations/simulate/virtualbox/",
+                    },
+                    {
+                      text: "cygwin模拟linux",
+                      link: "/markdown/operations/simulate/cygwin/",
+                    }, 
+                    {
+                      text:"云平台",
+                      link: "/markdown/operations/simulate/cloud/",
+                    }
+                ]
             },
             {
-                text: "Andriod",
-                link: "/markdown/system/andriod/",
+              text: "容器化",
+                items:[
+                  {
+                    text: "docker",
+                    link: "/markdown/operations/container/docker/",
+                  },
+                  {
+                    text: "Kubermetes",
+                    link: "/markdown/operations/container/k8s/",
+                  },
+                ]
             },
-        ],
-      },
-      {
-        text: "中间件",
-        items: [
-            {
-                text: "Nginx",
-                link: "/markdown/middle/nginx/",
-            },
-            {
-                text: "MQ系列",
-                link: "/markdown/middle/mq/",
-            },
-            {
-                text: "Zookeeper",
-                link: "/markdown/middle/zookeeper/",
-            },
-            {
-              text: "Kubernetes",
-              link: "/markdown/middle/k8s/",
-            },
-        ],
-      },
-      {
-        text: "模拟环境",
-        items: [
-            {
-                text: "VMware虚拟机",
-                link: "/markdown/simulate/vmware/",
-            },
-            {
-              text: "virtualbox虚拟机",
-              link: "/markdown/simulate/virtualbox/",
-            },
-            {
-                text: "docker",
-                link: "/markdown/simulate/docker/",
-            },
-            {
-              text: "cygwin",
-              link: "/markdown/simulate/cygwin/",
-            },
-            {
-              text: "conda",
-              link: "/markdown/simulate/docker/",
-            },
-            {
-              text: "maven",
-              link: "/markdown/simulate/docker/",
-            },
-            {
-              text: "npm",
-              link: "/markdown/simulate/docker/",
-            },
-            
+           
         ],
       },
       {
@@ -157,13 +138,78 @@ export default withMermaid({
             },
         ],
       },
-      
+      {
+        text: "网络相关",
+        items: [
+            {
+                text: "网络工程师",
+                link: "/markdown/network/base/",
+            },
+            {
+                text: "进入外网",
+                link: "/markdown/network/external/",
+            },
+        ],
+      },
+      {
+        text: "AI工具",
+        items: [
+            {
+            text: "AI画图工具",
+            items:[
+              {text:'sd-webui', link: "/markdown/aitool/picture/sd-webui/"},
+              {text:'sd-ComfyUI', link: "/markdown/aitool/picture/ComfyUI/"},
+            ]
+          },
+          {
+            text: "AI声音工具",
+            link: "/markdown/aitool/sound/",
+          },
+          {
+            text: "AI视频",
+            link: "/markdown/aitool/vedio/",
+          },
+          {
+            text: "模型网站",
+            link: "/markdown/aitool/website/",
+          },
+          {
+            text: "AI编辑器",
+            link: "/markdown/aitool/tool/",
+          },
+        ],
+      },
+      {
+        text: "工作必备",
+        items: [
+            {
+                text: "面试八股文",
+                link: "/markdown/work/interview/",
+            },
+            {
+                text: "office办公",
+                link: "/markdown/work/office/",
+            },
+            {
+                text: "Adoube系列",
+                link: "/markdown/work/adobe/",
+            },
+            {
+                text: "英语学习",
+                link: "/markdown/work/english/",
+            },
+            {
+                text: "数学学习",
+                link: "/markdown/work/math/",
+            },
+        ],
+      },
       {
         text: "其他技术",
         items: [
             {
-                text: "集成持续部署",
-                link: "/markdown/other/install/",
+              text: "集成持续部署",
+              link: "/markdown/other/install/",
             },
             {
               text: "版本控制工具",
@@ -172,10 +218,6 @@ export default withMermaid({
             {
               text: "构建静态网站",
               link: "/markdown/other/document/",
-            },
-            {
-              text: "外部网站访问",
-              link: "/markdown/other/network/",
             },
         ],
       },
@@ -252,13 +294,16 @@ export default withMermaid({
                 items: [
                   {text:'windows安装',link:'/markdown/data/redis/install/01'},
                   {text:'linux安装',link:'/markdown/data/redis/install/02'},
+                  {text:'客户端安装',link:'/markdown/data/redis/install/03'},
                 ],
             }, 
             {
-              text: '教程',
+              text: 'redis基础',
               items: [
-                {text:'windows安装',link:'/markdown/data/redis/install/01'},
-                {text:'linux安装',link:'/markdown/data/redis/install/02'},
+                {text:'一、基础篇',link:'/markdown/data/redis/base/01'},
+                {text:'二、实战篇',link:'/markdown/data/redis/base/02'},
+                {text:'三、高级篇',link:'/markdown/data/redis/base/03'},
+                {text:'四、原理篇',link:'/markdown/data/redis/base/04'},
               ],
           },  
         ],
@@ -330,60 +375,94 @@ export default withMermaid({
 
 
 
-        //============================ 操作系统 ==============================
+        //============================ 运维相关 ==============================
 
-        //============================  中间件  ==============================
-
-        //============================ 模拟环境 ==============================
-        '/markdown/simulate/vmware/':[
+        '/markdown/operations/simulate/vmware/':[
             {
                 text: '安装操作系统',
                 // 相对路径会自动追加子路径前缀
                 items: [
-                  {text:'一、安装window10',link:'/markdown/simulate/vmware/system/01'},
-                  {text:'二、安装window server2022',link:'/markdown/simulate/vmware/system/02'},
-                  {text:'三、安装Linux CentOS',link:'/markdown/simulate/vmware/system/03'},
-                  {text:'四、安装Linux debian',link:'/markdown/simulate/vmware/system/04'},
-                  {text:'五、安装Linux ubuntu',link:'/markdown/simulate/vmware/system/05'},
-                  {text:'六、安装Mac',link:'/markdown/simulate/vmware/system/06'},
-                  {text:'七、安装andriod',link:'/markdown/simulate/vmware/system/07'},
-                  {text:'八、安装Rocky Linux',link:'/markdown/simulate/vmware/system/08'},
-                  {text:'九、安装CentOS-Stream',link:'/markdown/simulate/vmware/system/09'},
+                  {text:'一、安装window10',link:'/markdown/operations/simulate/vmware/system/01'},
+                  {text:'二、安装window server2022',link:'/markdown/operations/simulate/vmware/system/02'},
+                  {text:'三、安装Linux CentOS',link:'/markdown/operations/simulate/vmware/system/03'},
+                  {text:'四、安装Linux debian',link:'/markdown/operations/simulate/vmware/system/04'},
+                  {text:'五、安装Linux ubuntu',link:'/markdown/operations/simulate/vmware/system/05'},
+                  {text:'六、安装Mac',link:'/markdown/operations/simulate/vmware/system/06'},
+                  {text:'七、安装andriod',link:'/markdown/operations/simulate/vmware/system/07'},
+                  {text:'八、安装Rocky Linux',link:'/markdown/operations/simulate/vmware/system/08'},
+                  {text:'九、安装CentOS-Stream',link:'/markdown/operations/simulate/vmware/system/09'},
                 ],
             },
             {
               text: 'VMware配置与操作',
               // 相对路径会自动追加子路径前缀
               items: [
-                {text:'VMware操作',link:'/markdown/simulate/vmware/tool/01'},
-                {text:'三种网络模式',link:'/markdown/simulate/vmware/tool/02'},
-                {text:'远程连接工具',link:'/markdown/simulate/vmware/tool/03'},
-                {text:'ubuntu的编辑器nano',link:'/markdown/simulate/vmware/tool/04'},
-                {text:'vim编辑器',link:'/markdown/simulate/vmware/tool/05'},
-                {text:'错误指南',link:'/markdown/simulate/vmware/tool/06'},
+                {text:'VMware操作',link:'/markdown/operations/simulate/vmware/tool/01'},
+                {text:'三种网络模式',link:'/markdown/operations/simulate/vmware/tool/02'},
+                {text:'远程连接工具',link:'/markdown/operations/simulate/vmware/tool/03'},
+                {text:'ubuntu的编辑器nano',link:'/markdown/operations/simulate/vmware/tool/04'},
+                {text:'vim编辑器',link:'/markdown/operations/simulate/vmware/tool/05'},
+                {text:'错误指南',link:'/markdown/operations/simulate/vmware/tool/06'},
               ],
           },
         ],
-        '/markdown/simulate/cygwin/':[
-          {
-              text: 'cygwin安装与使用',
+        '/markdown/operations/simulate/virtualbox/':[
+            {
+              text: 'virtualbox快速入门',
+              items: [
+                {text:'一、认识与下载安装',link:'/markdown/operations/simulate/virtualbox/01'},
+                {text:'二、安装CentOS7',link:'/markdown/operations/simulate/virtualbox/02'},
+                {text:'三、双网卡配置',link:'/markdown/operations/simulate/virtualbox/03'},
+                {text:'四、常见问题',link:'/markdown/operations/simulate/virtualbox/04'},
+              ],
+            }
+         ],
+        '/markdown/operations/simulate/cygwin/':[
+            {
+                text: 'cygwin安装与使用',
+                // 相对路径会自动追加子路径前缀
+                items: [
+                  {text:'一、安装cygwin',link:'/markdown/operations/simulate/cygwin/base/01'},
+                  {text:'二、使用cygwin',link:'/markdown/operations/simulate/cygwin/base/02'},
+                ],
+            },
+            {
+              text: '模拟其他软件',
               // 相对路径会自动追加子路径前缀
               items: [
-                {text:'一、安装cygwin',link:'/markdown/simulate/cygwin/base/01'},
-                {text:'二、使用cygwin',link:'/markdown/simulate/cygwin/base/02'},
+                {text:'redis',link:'/markdown/operations/simulate/cygwin/soft/01'},
               ],
-          },
+           },
+        ],
+        '/markdown/operations/simulate/cloud/':[
           {
-            text: '模拟其他软件',
-            // 相对路径会自动追加子路径前缀
+            text: '云平台使用',
             items: [
-              {text:'redis',link:'/markdown/simulate/cygwin/soft/01'},
+              {text:'一、认识云平台与购买服务器',link:'/markdown/operations/simulate/cloud/01'}, 
             ],
-        },
-      ],
+          }
+        ],
+        '/markdown/operations/container/docker/':[
+              {
+                text: 'docker速通',
+                items: [
+                  {text:'一、基础使用',link:'/markdown/operations/container/docker/sutong/01'},
+                  {text:'二、进阶',link:'/markdown/operations/container/docker/sutong/02'},
+                ],
+            },
+            {
+              text: 'docker安装软件记录',
+              items: [
+                {text:'安装redis',link:'/markdown/operations/simulate/docker/sutong/01'},
+              ],
+           },
+        ],
+
+
+        
+        
 
         //============================ 测试相关 ==============================
-        
         '/markdown/test/functional/': [
         ],
         '/markdown/test/stress/': [
@@ -410,6 +489,174 @@ export default withMermaid({
         '/markdown/test/automation/': [
         ],
 
+        //============================ 网络技术 ==============================
+        
+        '/markdown/network/external/': [
+          {
+              text: 'shadowsocks小飞机',
+              // 相对路径会自动追加子路径前缀
+              items: [
+                {text:'Shadowsocks 服务端安装',link:'/markdown/network/external/shadowsocks/01.md'},
+                {text:'Shadowsocks 客户端安装',link:'/markdown/network/external/shadowsocks/02.md'},
+              ],
+          },
+          {
+            text: '内网穿透',
+            // 相对路径会自动追加子路径前缀
+            items: [
+              {text:'一、快速使用',link:'/markdown/network/external/frp/01.md'},
+              {text:'二、本机虚拟机使用',link:'/markdown/network/external/frp/02.md'},
+            ],
+          },
+          {
+            text: '其他网络问题',
+            // 相对路径会自动追加子路径前缀
+            items: [
+              {text:'CDN插件安装',link:'/markdown/network/external/cdn/01.md'},
+            ],
+          },
+       ],
+        
+        //============================ AI工具 ==============================
+        '/markdown/aitool/picture/sd-webui/': [
+            {
+                text: 'sd-webui 课程学习',
+                items: [
+                  {text:'第一章：认识',link:'/markdown/aitool/picture/sd-webui/study/01'},
+                  {text:'第二章：提示词与参数',link:'/markdown/aitool/picture/sd-webui/study/02'},
+                  {text:'第三章：图生图',link:'/markdown/aitool/picture/sd-webui/study/03'},
+                  {text:'第四章：绘画模型',link:'/markdown/aitool/picture/sd-webui/study/04'},
+                  {text:'第五章：高清修复与放大',link:'/markdown/aitool/picture/sd-webui/study/05'},
+                  {text:'第六章: Embeddings、LoRa、Hypernetwork模型原理解析',link:'/markdown/aitool/picture/sd-webui/study/06'},
+                  {text:'第七章：局部重绘',link:'/markdown/aitool/picture/sd-webui/study/07'},
+                  {text:'第八章：插件安装',link:'/markdown/aitool/picture/sd-webui/study/08'},
+                  {text:'第九章: lora',link:'/markdown/aitool/picture/sd-webui/study/09'},
+                  {text:'第十章: ControlNet',link:'/markdown/aitool/picture/sd-webui/study/10'},
+                  {text:'第十一章：超高清放大',link:'/markdown/aitool/picture/sd-webui/study/11'},
+                  {text:'第十二章: AI文字与二维码',link:'/markdown/aitool/picture/sd-webui/study/12'},
+                ],
+            },
+            {
+              text: 'sd-webui 其他功能',
+              items: [
+                {text:'动画AnimateDiff',link:'/markdown/aitool/picture/sd-webui/other/01'},
+                {text:'透明图rembg',link:'/markdown/aitool/picture/sd-webui/other/02'},
+                {text:'换脸sd-webui-reactor',link:'/markdown/aitool/picture/sd-webui/other/03'},
+                {text:'敏感词过滤',link:'/markdown/aitool/picture/sd-webui/other/04'},
+                {text:'本地翻译部署',link:'/markdown/aitool/picture/sd-webui/other/05'},
+                {text:'老照片修复',link:'/markdown/aitool/picture/sd-webui/other/06'},
+              ],
+            },
+            {
+              text: 'sd-webui 接口使用',
+              items: [
+                {text:'一、查询接口的方式',link:'/markdown/aitool/picture/sd-webui/api/01'},
+                {text:'二、webui接口使用',link:'/markdown/aitool/picture/sd-webui/api/02'},
+                {text:'三、插件接口使用',link:'/markdown/aitool/picture/sd-webui/api/03'},
+              ],
+            },
+        ],
+        '/markdown/aitool/picture/ComfyUI/': [
+            {
+                text: '',
+                // 相对路径会自动追加子路径前缀
+                items: [
+               
+                ],
+            },
+        ],
+        '/markdown/aitool/sound/': [
+            {
+                text: 'ChatTTS',
+                // 相对路径会自动追加子路径前缀
+                items: [
+                  {text:'一、安装（初始版本-已作废）',link:'/markdown/aitool/sound/chatTTS/01'},
+                  {text:'二、安装（20240628版本）',link:'/markdown/aitool/sound/chatTTS/02'},
+                  {text:'三、chatTTS学习笔记',link:'/markdown/aitool/sound/chatTTS/03'},
+                  {text:'四、resemble-enhance音频降噪',link:'/markdown/aitool/sound/chatTTS/04'},
+                ],
+            },
+        ],
+
+      
+        "/markdown/aitool/tool/": [
+          {
+            text: 'Cursor',
+            items: [
+              {text:'一、快速上手',link:'/markdown/aitool/tool/cursor/01'},
+              {text:'二、cursor三大核心功能',link:'/markdown/aitool/tool/cursor/02'},
+              {text:'三、cursor上下文指定',link:'/markdown/aitool/tool/cursor/03'},
+              {text:'四、cursor智能插件开发',link:'/markdown/aitool/tool/cursor/04'},
+            ],
+          },
+          {
+            text: 'Claude Code',
+            items: [
+              {text:'一、初始化Claude Code',link:'/markdown/aitool/tool/claude/01'},
+              {text:'二、Claude Code应用',link:'/markdown/aitool/tool/claude/02'},
+            ],
+          },
+          {
+            text: 'Github Copilot',
+            items: [
+              {text:'一、快速入门',link:'/markdown/aitool/tool/copilot/01'},
+            ],
+          },
+        ],
+
+        '/markdown/aitool/website/': [
+          {
+            text: 'Huggingface(抱脸)',
+            items: [
+              {text:'一、注册用户与token',link:'/markdown/aitool/website/huggingface/01.md'},
+              {text:'二、huggingface网站使用',link:'/markdown/aitool/website/huggingface/02.md'},
+              {text:'三、镜像与下载',link:'/markdown/aitool/website/huggingface/03.md'},
+            ],
+          },
+          {
+            text: 'modelscope(魔塔)',
+            items: [
+              {text:'一、快速入门',link:'/markdown/aitool/website/modelscope/01.md'},
+            ],
+          },
+        ],
+        //============================ 工作必备 ==============================
+        '/markdown/work/interview/': [
+          {
+            text: '前端面试题',
+            items: [
+              {text:'一、javascript篇',link:'/markdown/work/interview/front/01.md'},
+              {text:'二、ES6篇',link:'/markdown/work/interview/front/02.md'},
+              {text:'三、typeScript篇',link:'/markdown/work/interview/front/03.md'},
+              {text:'四、CSS篇',link:'/markdown/work/interview/front/04.md'},
+              {text:'五、Vue篇',link:'/markdown/work/interview/front/05.md'},
+              {text:'六、React篇',link:'/markdown/work/interview/front/06.md'},
+              {text:'七、前端工程化',link:'/markdown/work/interview/front/07.md'},
+              {text:'八、设计模式',link:'/markdown/work/interview/front/08.md'},
+              {text:'九、场景题',link:'/markdown/work/interview/front/09.md'},
+            ],
+          },
+          {
+            text: 'Java面试题',
+            items: [
+              {text:'一、Redis篇',link:'/markdown/work/interview/java/01.md'},
+              {text:'二、数据库篇',link:'/markdown/work/interview/java/02.md'},
+              {text:'三、框架篇',link:'/markdown/work/interview/java/03.md'},
+              {text:'四、微服务篇',link:'/markdown/work/interview/java/04.md'},
+              {text:'五、消息中间件篇',link:'/markdown/work/interview/java/05.md'},
+              {text:'六、常见集合篇',link:'/markdown/work/interview/java/06.md'},
+              {text:'七、并发编程篇',link:'/markdown/work/interview/java/07.md'},
+              {text:'八、JVM虚拟机篇',link:'/markdown/work/interview/java/08.md'},
+              {text:'九、企业场景篇',link:'/markdown/work/interview/java/09.md'},
+            ],
+          },
+          {
+            text: '面试题记录',
+            items: [
+              {text:'记录的面试题',link:'/markdown/work/interview/record/01.md'},
+            ],
+          },
+        ],
         //============================ 其他技术 ==============================
         '/markdown/other/install/': [
             {
@@ -516,23 +763,7 @@ export default withMermaid({
           },
         ],
         
-        '/markdown/other/network/': [
-          {
-              text: 'shadowsocks小飞机',
-              // 相对路径会自动追加子路径前缀
-              items: [
-                {text:'Shadowsocks 服务端安装',link:'/markdown/other/network/shadowsocks/01.md'},
-                {text:'Shadowsocks 客户端安装',link:'/markdown/other/network/shadowsocks/02.md'},
-              ],
-          },
-          {
-            text: '其他网络问题',
-            // 相对路径会自动追加子路径前缀
-            items: [
-              {text:'CDN插件安装',link:'/markdown/other/network/cdn/01.md'},
-            ],
-          },
-       ],
+        
     },
 
     // 右边目录是否关闭
