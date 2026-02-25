@@ -1,5 +1,9 @@
 # 版本控制工具
 
-主要是为了控制代码
+## 1. git相关
 
-结合jenkins等自动化部署工具，可以更新代码的同时自动进行构建
+  [尚硅谷新版Git快速入门-李海波](https://www.bilibili.com/video/BV1wm4y1z7Dg)
+
+## 2. gitflow
+
+  [尚硅谷GitFlow教程-周阳](https://www.bilibili.com/video/BV14kCvBXEbs)

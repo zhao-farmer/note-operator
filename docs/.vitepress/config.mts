@@ -118,7 +118,15 @@ export default withMermaid({
                   },
                 ]
             },
-           
+            {
+              text: "web服务器",
+                items:[
+                  {
+                    text: "nginx",
+                    link: "/markdown/operations/server/nginx/",
+                  },
+                ]
+            },
         ],
       },
       {
@@ -148,6 +156,10 @@ export default withMermaid({
             {
                 text: "进入外网",
                 link: "/markdown/network/external/",
+            },
+            {
+                text: "网络其他相关",
+                link: "/markdown/network/other/",
             },
         ],
       },
@@ -218,6 +230,10 @@ export default withMermaid({
             {
               text: "构建静态网站",
               link: "/markdown/other/document/",
+            },
+            {
+              text: "表达式相关",
+              link: "/markdown/other/expression/",
             },
         ],
       },
@@ -376,6 +392,23 @@ export default withMermaid({
 
 
         //============================ 运维相关 ==============================
+        '/markdown/operations/system/linux/':[
+            {
+                text: 'Linux使用',
+                items: [
+                  {text:'一、基础入门',link:'/markdown/operations/system/linux/base/01'},
+                  {text:'二、系统原理',link:'/markdown/operations/system/linux/base/02'},
+                  {text:'三、网络与服务',link:'/markdown/operations/system/linux/base/03'},
+                  {text:'四、脚本自动化与运维',link:'/markdown/operations/system/linux/base/04'},
+                ],
+            },
+            {
+              text: '日常使用',
+              items: [
+                {text:'软件安装记录',link:'/markdown/operations/system/linux/records/01'},
+              ],
+           },
+        ],
 
         '/markdown/operations/simulate/vmware/':[
             {
@@ -397,12 +430,13 @@ export default withMermaid({
               text: 'VMware配置与操作',
               // 相对路径会自动追加子路径前缀
               items: [
-                {text:'VMware操作',link:'/markdown/operations/simulate/vmware/tool/01'},
+                {text:'VMware安装软件的两种方式',link:'/markdown/operations/simulate/vmware/tool/01'},
                 {text:'三种网络模式',link:'/markdown/operations/simulate/vmware/tool/02'},
                 {text:'远程连接工具',link:'/markdown/operations/simulate/vmware/tool/03'},
                 {text:'ubuntu的编辑器nano',link:'/markdown/operations/simulate/vmware/tool/04'},
                 {text:'vim编辑器',link:'/markdown/operations/simulate/vmware/tool/05'},
                 {text:'错误指南',link:'/markdown/operations/simulate/vmware/tool/06'},
+                {text:'日常记录',link:'/markdown/operations/simulate/vmware/tool/07'},
               ],
           },
         ],
@@ -439,6 +473,8 @@ export default withMermaid({
             text: '云平台使用',
             items: [
               {text:'一、认识云平台与购买服务器',link:'/markdown/operations/simulate/cloud/01'}, 
+              {text:'二、云平台网络',link:'/markdown/operations/simulate/cloud/02'}, 
+              {text:'三、云平台存储对象',link:'/markdown/operations/simulate/cloud/03'}, 
             ],
           }
         ],
@@ -451,13 +487,36 @@ export default withMermaid({
                 ],
             },
             {
-              text: 'docker安装软件记录',
+              text: 'docker使用记录',
               items: [
-                {text:'安装redis',link:'/markdown/operations/simulate/docker/sutong/01'},
+                {text:'日常记录',link:'/markdown/operations/container/docker/other/01'},
+                {text:'使用docker注意事项',link:'/markdown/operations/container/docker/other/02'},
               ],
            },
         ],
-
+        '/markdown/operations/container/kubernetes/':[
+          {
+            text: 'kubernetes速通',
+            items: [
+              {text:'一、基础使用',link:'/markdown/operations/container/kubernetes/sutong/01'},
+              {text:'二、进阶',link:'/markdown/operations/container/kubernetes/sutong/02'},
+            ],
+          },
+          {
+            text: 'k8s使用记录',
+            items: [
+              {text:'使用docker注意事项',link:'/markdown/operations/container/kubernetes/other/01'},
+            ],
+          },
+        ],
+        "/markdown/operations/server/nginx/":[
+            {
+            text: 'nginx使用',
+            items: [
+              {text:'一、安装nginx',link:'/markdown/operations/server/nginx/01'},
+            ],
+          },
+        ],
 
         
         
@@ -498,6 +557,7 @@ export default withMermaid({
               items: [
                 {text:'Shadowsocks 服务端安装',link:'/markdown/network/external/shadowsocks/01.md'},
                 {text:'Shadowsocks 客户端安装',link:'/markdown/network/external/shadowsocks/02.md'},
+                {text:'Shadowsocks 新版Linux安装',link:'/markdown/network/external/shadowsocks/03.md'},
               ],
           },
           {
@@ -626,14 +686,18 @@ export default withMermaid({
             text: '前端面试题',
             items: [
               {text:'一、javascript篇',link:'/markdown/work/interview/front/01.md'},
-              {text:'二、ES6篇',link:'/markdown/work/interview/front/02.md'},
+              {text:'二、ES6+篇',link:'/markdown/work/interview/front/02.md'},
               {text:'三、typeScript篇',link:'/markdown/work/interview/front/03.md'},
               {text:'四、CSS篇',link:'/markdown/work/interview/front/04.md'},
-              {text:'五、Vue篇',link:'/markdown/work/interview/front/05.md'},
-              {text:'六、React篇',link:'/markdown/work/interview/front/06.md'},
-              {text:'七、前端工程化',link:'/markdown/work/interview/front/07.md'},
-              {text:'八、设计模式',link:'/markdown/work/interview/front/08.md'},
-              {text:'九、场景题',link:'/markdown/work/interview/front/09.md'},
+              {text:'五、HTML篇',link:'/markdown/work/interview/front/05.md'},
+              {text:'六、Vue篇',link:'/markdown/work/interview/front/06.md'},
+              {text:'七、React篇',link:'/markdown/work/interview/front/07.md'},
+              {text:'八、前端工程化',link:'/markdown/work/interview/front/08.md'},
+              {text:'九、设计模式',link:'/markdown/work/interview/front/09.md'},
+              {text:'十、场景题',link:'/markdown/work/interview/front/10.md'},
+              {text:'十一、自己总结',link:'/markdown/work/interview/front/11.md'},
+              {text:'十二、jquery',link:'/markdown/work/interview/front/12.md'},
+              {text:'十三、JSP',link:'/markdown/work/interview/front/13.md'},
             ],
           },
           {
@@ -653,7 +717,7 @@ export default withMermaid({
           {
             text: '面试题记录',
             items: [
-              {text:'记录的面试题',link:'/markdown/work/interview/record/01.md'},
+              {text:'记录的面试题',link:'/markdown/work/interview/self/01.md'},
             ],
           },
         ],
@@ -663,7 +727,27 @@ export default withMermaid({
                 text: 'Jenkins',
                 // 相对路径会自动追加子路径前缀
                 items: [
-                  {text:'一、快速入门',link:'/markdown/other/install/Jenkins/01.md'},
+                  {text:'一、jenkins基础构建',link:'/markdown/other/install/Jenkins/01.md'},
+                  {text:'二、jenkins更多配置',link:'/markdown/other/install/Jenkins/02.md'},
+                  {text:'三、jenkins高级使用',link:'/markdown/other/install/Jenkins/03.md'},
+                  {text:'四、jenkins+k8s',link:'/markdown/other/install/Jenkins/04.md'},
+                  {text:'五、构建各类项目',link:'/markdown/other/install/Jenkins/05.md'},
+                ],
+            },
+            {
+                text: 'Cloudflare',
+                // 相对路径会自动追加子路径前缀
+                items: [
+                  {text:'一、Cloudflare的介绍',link:'/markdown/other/install/cloudflare/01.md'},
+                  {text:'二、Cloudflare部署nuxt',link:'/markdown/other/install/cloudflare/02.md'},
+                ],
+            },
+             {
+                text: 'Vercel',
+                // 相对路径会自动追加子路径前缀
+                items: [
+                  {text:'一、Vercel基础介绍',link:'/markdown/other/install/vercel/01.md'},
+                  {text:'二、Vercel部署Next.js',link:'/markdown/other/install/vercel/02.md'},
                 ],
             },
             {
@@ -695,6 +779,7 @@ export default withMermaid({
                   {text:'二、github Actions',link:'/markdown/other/version/github/02.md'},
                   {text:'三、github Pages',link:'/markdown/other/version/github/03.md'},
                   {text:'四、vuePress项目部署github',link:'/markdown/other/version/github/04.md'},
+                  {text:'五、github多账户配置公钥',link:'/markdown/other/version/github/05.md'},
                 ],
             },
             {
@@ -709,19 +794,18 @@ export default withMermaid({
         ],
         '/markdown/other/document/': [
           {
-            
-              text: 'vuePress静态站点',
-              // 相对路径会自动追加子路径前缀
-              items: [
-                {text:'一、快速上手',link:'/markdown/other/document/vuepress/01.md'},
-                {text:'二、配置文件修改',link:'/markdown/other/document/vuepress/02.md'},
-                {text:'三、页面',link:'/markdown/other/document/vuepress/03.md'},
-                {text:'四、makdown语法扩展',link:'/markdown/other/document/vuepress/04.md'},
-                {text:'五、静态资源',link:'/markdown/other/document/vuepress/05.md'},
-                {text:'六、github部署',link:'/markdown/other/document/vuepress/06.md'},
-                {text:'七、样式相关配置',link:'/markdown/other/document/vuepress/07.md'},
-                {text:'八、插件配置',link:'/markdown/other/document/vuepress/08.md'},
-              ],
+            text: 'vuePress静态站点',
+            // 相对路径会自动追加子路径前缀
+            items: [
+              {text:'一、快速上手',link:'/markdown/other/document/vuepress/01.md'},
+              {text:'二、配置文件修改',link:'/markdown/other/document/vuepress/02.md'},
+              {text:'三、页面',link:'/markdown/other/document/vuepress/03.md'},
+              {text:'四、makdown语法扩展',link:'/markdown/other/document/vuepress/04.md'},
+              {text:'五、静态资源',link:'/markdown/other/document/vuepress/05.md'},
+              {text:'六、github部署',link:'/markdown/other/document/vuepress/06.md'},
+              {text:'七、样式相关配置',link:'/markdown/other/document/vuepress/07.md'},
+              {text:'八、插件配置',link:'/markdown/other/document/vuepress/08.md'},
+            ],
           },
           {
             text: 'vitePress静态站点',
@@ -749,21 +833,41 @@ export default withMermaid({
           },
           {
             text: 'hugo静态站点',
-            // 相对路径会自动追加子路径前缀
             items: [
               {text:'一、快速上手',link:'/markdown/other/document/hugo/01.md'},
             ],
           },
           {
             text: 'Docusaurus静态站点',
-            // 相对路径会自动追加子路径前缀
             items: [
               {text:'待补充',link:'/markdown/other/document/Docusaurus/01.md'},
             ],
           },
         ],
         
-        
+        "/markdown/other/expression/":[
+          {
+            text: 'cron表达式',
+            items: [
+              {text:'一、cron表达式详解',link:'/markdown/other/expression/cron/01.md'},
+              {text:'二、后台语言中的cron表达式',link:'/markdown/other/expression/cron/02.md'},
+              {text:'三、linux中crontab',link:'/markdown/other/expression/cron/03.md'},
+            ],
+          },
+          {
+            text: '正则表达式',
+            items: [
+              {text:'一、正则表达式',link:'/markdown/other/expression/regular/01.md'},
+              {text:'二、语言中的表达式',link:'/markdown/other/expression/regular/02.md'},
+            ],
+          },
+          {
+            text: 'URL处理',
+            items: [
+              {text:'一、认识URL',link:'/markdown/other/expression/url/01.md'},
+            ],
+          },
+        ],
     },
 
     // 右边目录是否关闭
