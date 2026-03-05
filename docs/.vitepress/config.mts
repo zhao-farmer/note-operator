@@ -166,7 +166,7 @@ export default withMermaid({
       {
         text: "AI工具",
         items: [
-            {
+          {
             text: "AI画图工具",
             items:[
               {text:'sd-webui', link: "/markdown/aitool/picture/sd-webui/"},
@@ -189,6 +189,15 @@ export default withMermaid({
             text: "AI编辑器",
             link: "/markdown/aitool/tool/",
           },
+          {
+            text: "AI Agent",
+            link: "/markdown/aitool/agent/",
+          },
+          {
+            text: "AI其他相关",
+            link: "/markdown/aitool/other/",
+          },
+          
         ],
       },
       {
@@ -394,13 +403,13 @@ export default withMermaid({
         //============================ 运维相关 ==============================
         '/markdown/operations/system/linux/':[
             {
-                text: 'Linux使用',
-                items: [
-                  {text:'一、基础入门',link:'/markdown/operations/system/linux/base/01'},
-                  {text:'二、系统原理',link:'/markdown/operations/system/linux/base/02'},
-                  {text:'三、网络与服务',link:'/markdown/operations/system/linux/base/03'},
-                  {text:'四、脚本自动化与运维',link:'/markdown/operations/system/linux/base/04'},
-                ],
+              text: 'Linux使用',
+              items: [
+                {text:'一、基础入门',link:'/markdown/operations/system/linux/base/01'},
+                {text:'二、系统原理',link:'/markdown/operations/system/linux/base/02'},
+                {text:'三、网络与服务',link:'/markdown/operations/system/linux/base/03'},
+                {text:'四、脚本自动化与运维',link:'/markdown/operations/system/linux/base/04'},
+              ],
             },
             {
               text: '日常使用',
@@ -409,7 +418,24 @@ export default withMermaid({
               ],
            },
         ],
-
+        '/markdown/operations/system/windows/':[
+          {
+            text: 'Windows使用',
+            items: [
+              {text:'一、基础入门',link:'/markdown/operations/system/windows/base/01'},
+              {text:'二、网络与软件安装',link:'/markdown/operations/system/windows/base/02'},
+              {text:'三、服务器版本',link:'/markdown/operations/system/windows/base/03'},
+              {text:'四、命令行使用',link:'/markdown/operations/system/windows/base/04'},
+            ],
+          },
+          {
+            text: '日常使用',
+            items: [
+              {text:'系统软件使用',link:'/markdown/operations/system/windows/records/01'},
+              {text:'卸载与删除软件',link:'/markdown/operations/system/windows/records/02'},
+            ],
+          },
+        ],
         '/markdown/operations/simulate/vmware/':[
             {
                 text: '安装操作系统',
@@ -505,7 +531,8 @@ export default withMermaid({
           {
             text: 'k8s使用记录',
             items: [
-              {text:'使用docker注意事项',link:'/markdown/operations/container/kubernetes/other/01'},
+              {text:'一、k3s的使用',link:'/markdown/operations/container/kubernetes/other/01'},
+              {text:'二、k9s的使用',link:'/markdown/operations/container/kubernetes/other/02'},
             ],
           },
         ],
@@ -517,9 +544,6 @@ export default withMermaid({
             ],
           },
         ],
-
-        
-        
 
         //============================ 测试相关 ==============================
         '/markdown/test/functional/': [
@@ -558,6 +582,7 @@ export default withMermaid({
                 {text:'Shadowsocks 服务端安装',link:'/markdown/network/external/shadowsocks/01.md'},
                 {text:'Shadowsocks 客户端安装',link:'/markdown/network/external/shadowsocks/02.md'},
                 {text:'Shadowsocks 新版Linux安装',link:'/markdown/network/external/shadowsocks/03.md'},
+                {text:'Shadowsocks 问题汇总',link:'/markdown/network/external/shadowsocks/04.md'},
               ],
           },
           {
@@ -618,22 +643,37 @@ export default withMermaid({
         ],
         '/markdown/aitool/picture/ComfyUI/': [
             {
-                text: '',
-                // 相对路径会自动追加子路径前缀
-                items: [
-               
-                ],
+              text: '',
+              items: [
+              
+              ],
             },
         ],
         '/markdown/aitool/sound/': [
             {
                 text: 'ChatTTS',
-                // 相对路径会自动追加子路径前缀
                 items: [
                   {text:'一、安装（初始版本-已作废）',link:'/markdown/aitool/sound/chatTTS/01'},
                   {text:'二、安装（20240628版本）',link:'/markdown/aitool/sound/chatTTS/02'},
                   {text:'三、chatTTS学习笔记',link:'/markdown/aitool/sound/chatTTS/03'},
                   {text:'四、resemble-enhance音频降噪',link:'/markdown/aitool/sound/chatTTS/04'},
+                  {text:'四、20260225新学习',link:'/markdown/aitool/sound/chatTTS/05'},
+                ],
+            },
+            {
+                text: 'IndexTTS',
+                items: [
+                  {text:'一、安装',link:'/markdown/aitool/sound/indexTTS/01'},
+                  {text:'二、远程调用',link:'/markdown/aitool/sound/indexTTS/02'},
+                  {text:'三、参数说明',link:'/markdown/aitool/sound/indexTTS/03'},
+                ],
+            },
+            {
+                text: 'mossTTS',
+                items: [
+                  {text:'一、安装',link:'/markdown/aitool/sound/mossTTS/01'},
+                  {text:'二、远程调用',link:'/markdown/aitool/sound/mossTTS/02'},
+                  {text:'三、参数说明',link:'/markdown/aitool/sound/mossTTS/03'},
                 ],
             },
         ],
@@ -680,6 +720,35 @@ export default withMermaid({
             ],
           },
         ],
+        '/markdown/aitool/agent/': [
+          {
+            text: 'Ollama大模型调用',
+            items: [
+              {text:'一、安装与配置',link:'/markdown/aitool/agent/ollama/01.md'},
+              {text:'二、Ollama使用',link:'/markdown/aitool/agent/ollama/02.md'},
+            ],
+          },
+          {
+            text: 'openClaw个人助手',
+            items: [
+              {text:'一、快速上手',link:'/markdown/aitool/agent/openclaw/01.md'},
+              {text:'二、openClaw配置',link:'/markdown/aitool/agent/openclaw/02.md'},
+              {text:'三、openClaw使用',link:'/markdown/aitool/agent/openclaw/03.md'},
+            ]
+          },
+         ],
+        '/markdown/aitool/other/': [
+          {
+            text: 'cuda',
+            items: [
+              {text:'一、安装与配置',link:'/markdown/aitool/other/cuda/01.md'},
+              {text:'二、CUDA安装失败',link:'/markdown/aitool/other/cuda/02.md'},
+            ],
+          },
+          
+        ],
+        
+
         //============================ 工作必备 ==============================
         '/markdown/work/interview/': [
           {
